@@ -1,0 +1,7 @@
+platform :ios, '14.0'
+use_frameworks!
+
+target 'Ingredii' do
+  pod 'GoogleMLKit/TextRecognition', '8.0.0'
+  # Add other ML Kit pods if needed
+end

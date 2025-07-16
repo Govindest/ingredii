@@ -36,3 +36,25 @@ TensorFlow Lite models:
    invoked when the server is run with `mode=ocr`.
 
 See `ArduinoCVBlynk/README.md` for setup instructions.
+
+## Text Recognition on iOS
+
+The app can also extract text from images using ML Kit. Add the
+`GoogleMLKit/TextRecognition` pod to the `Podfile` and run `pod install`:
+
+```ruby
+pod 'GoogleMLKit/TextRecognition', '8.0.0'
+```
+
+After installing the pod open the `.xcworkspace` and use
+`TextRecognitionService` to process a `UIImage` or camera frame:
+
+```swift
+let service = TextRecognitionService()
+service.recognizeText(in: image) { result in
+    // handle recognized text
+}
+```
+
+This service wraps ML Kit's `TextRecognizer` as described in the official
+documentation.
