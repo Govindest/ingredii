@@ -2,6 +2,10 @@
 
 Simple pantry inventory management example built with SwiftUI.
 
+This repository also contains an optional computer vision example that uses an
+ESP32-CAM and TensorFlow Lite models to automatically identify pantry items or
+scan text from a product label.
+
 ## Features
 
 - Display a list of pantry items
@@ -18,3 +22,16 @@ Open `Ingredii/Ingredii.xcodeproj` in Xcode and run the `Ingredii` target.
 ## Tests
 
 Unit tests reside in the `IngrediiTests` group. Run them from Xcode via the `Product` → `Test` menu.
+
+## Computer Vision Example
+
+The `ArduinoCVBlynk` directory contains a companion project demonstrating how
+to capture images from an ESP32‑CAM and classify them on-device. It uses two
+TensorFlow Lite models:
+
+1. **On-Device Food Classifier** – recognizes dozens of common dishes and
+   snacks.
+2. **ML Kit Text Recognition v2** – reads printed text from the image when
+   invoked in `mode=ocr`.
+
+See `ArduinoCVBlynk/README.md` for setup instructions.
