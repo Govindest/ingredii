@@ -58,3 +58,7 @@ service.recognizeText(in: image) { result in
 
 This service wraps ML Kit's `TextRecognizer` as described in the official
 documentation.
+
+cd ingredii       # or whatever directory you cloned into
+git pull
+
