@@ -4,13 +4,7 @@ struct ContentView: View {
     @StateObject private var viewModel = PantryViewModel()
 
     var body: some View {
-        NavigationView {
-            PantryListView(items: viewModel.items)
-                .navigationTitle("Ingredii")
-        }
-        .onAppear {
-            viewModel.loadSampleData()
-        }
+        PantryListView(viewModel: viewModel)
     }
 }
 
