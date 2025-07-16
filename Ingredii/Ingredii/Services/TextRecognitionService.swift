@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 import MLKitTextRecognition
 import MLKitVision
 
