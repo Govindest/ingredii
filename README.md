@@ -17,17 +17,11 @@ scan text from a product label.
 
 ## Running
 
-This repository does not include a fully configured Xcode project. The
-`Ingredii.xcodeproj` file is only a placeholder, which is why Xcode reports the
-project as being in an unsupported format. To build the app you will need to
-create a new Xcode project and add the existing source files manually:
-
-1. Open Xcode and create a new **iOS App** using the *SwiftUI* template.
-2. Set *Ingredii* as the product name and remove the files Xcode generates in
-   the new project.
-3. Copy the contents of `Ingredii/Ingredii/` (Swift files, assets, storyboard
-   and `Info.plist`) into the new project.
-4. Build and run the app using the `Ingredii` target.
+Open `Ingredii/Ingredii.xcodeproj` in Xcode to build the sample app. The
+project is intentionally minimal and does not specify a signing team. Select
+your own development team under **Signing & Capabilities** before running. If
+you add the optional text recognition pod, run `pod install` in the `Ingredii`
+directory and then open `Ingredii.xcworkspace` instead of the project file.
 
 ## Tests
 

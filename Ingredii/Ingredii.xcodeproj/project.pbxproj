@@ -24,18 +24,18 @@
 
         AA0000200000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
         AA0000210000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-        AA0000220000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-        AA0000230000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryListView.swift; sourceTree = "<group>"; };
-        AA0000240000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
-        AA0000250000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
-        AA0000260000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewModel.swift; sourceTree = "<group>"; };
-        AA0000270000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-        AA0000280000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-        AA0000290000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryItem.swift; sourceTree = "<group>"; };
-        AA00002A0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
-        AA00002B0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionService.swift; sourceTree = "<group>"; };
-        AA00002C0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-        AA00002D0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_inventory.json; sourceTree = "<group>"; };
+        AA0000220000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+        AA0000230000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/PantryListView.swift; sourceTree = "<group>"; };
+        AA0000240000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/AddItemView.swift; sourceTree = "<group>"; };
+        AA0000250000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ItemDetailView.swift; sourceTree = "<group>"; };
+        AA0000260000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/PantryViewModel.swift; sourceTree = "<group>"; };
+        AA0000270000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers/Extensions.swift; sourceTree = "<group>"; };
+        AA0000280000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers/AppConstants.swift; sourceTree = "<group>"; };
+        AA0000290000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/PantryItem.swift; sourceTree = "<group>"; };
+        AA00002A0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/PersistenceService.swift; sourceTree = "<group>"; };
+        AA00002B0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/TextRecognitionService.swift; sourceTree = "<group>"; };
+        AA00002C0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/NetworkService.swift; sourceTree = "<group>"; };
+        AA00002D0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Resources/sample_inventory.json; sourceTree = "<group>"; };
         AA00002E0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
         AA00002F0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
         AA0000300000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
                 AA0000200000000000000001,
                 AA0000210000000000000001,
             );
-            path = "Ingredii";
+            path = "Ingredii/Ingredii";
             sourceTree = "<group>";
         };
         AA0000410000000000000001 /* PBXGroup */ = {
