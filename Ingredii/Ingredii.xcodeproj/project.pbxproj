@@ -1,1 +1,234 @@
-// Placeholder Xcode project file
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 55;
+    objects = {
+        AA0000010000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000200000000000000001 /* AppDelegate.swift */; };
+        AA0000020000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000210000000000000001 /* SceneDelegate.swift */; };
+        AA0000030000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000220000000000000001 /* ContentView.swift */; };
+        AA0000040000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000230000000000000001 /* PantryListView.swift */; };
+        AA0000050000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000240000000000000001 /* AddItemView.swift */; };
+        AA0000060000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000250000000000000001 /* ItemDetailView.swift */; };
+        AA0000070000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000260000000000000001 /* PantryViewModel.swift */; };
+        AA0000080000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000270000000000000001 /* Extensions.swift */; };
+        AA0000090000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000280000000000000001 /* AppConstants.swift */; };
+        AA00000A0000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000290000000000000001 /* PantryItem.swift */; };
+        AA00000B0000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA00002A0000000000000001 /* PersistenceService.swift */; };
+        AA00000C0000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA00002B0000000000000001 /* TextRecognitionService.swift */; };
+        AA00000D0000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA00002C0000000000000001 /* NetworkService.swift */; };
+        AA00000E0000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA00002D0000000000000001 /* sample_inventory.json */; };
+        AA00000F0000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA00002E0000000000000001 /* LaunchScreen.storyboard */; };
+        AA0000110000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA00002F0000000000000001 /* Assets.xcassets */; };
+        AA0000120000000000000001 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = AA0000300000000000000001 /* Info.plist */; };
+
+        AA0000200000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        AA0000210000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+        AA0000220000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+        AA0000230000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryListView.swift; sourceTree = "<group>"; };
+        AA0000240000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+        AA0000250000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+        AA0000260000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewModel.swift; sourceTree = "<group>"; };
+        AA0000270000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+        AA0000280000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+        AA0000290000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryItem.swift; sourceTree = "<group>"; };
+        AA00002A0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+        AA00002B0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionService.swift; sourceTree = "<group>"; };
+        AA00002C0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+        AA00002D0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_inventory.json; sourceTree = "<group>"; };
+        AA00002E0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+        AA00002F0000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        AA0000300000000000000001 /* PBXFileReference */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+        AA0000400000000000000001 /* PBXGroup */ = {
+            isa = PBXGroup;
+            children = (
+                AA0000220000000000000001,
+                AA0000230000000000000001,
+                AA0000240000000000000001,
+                AA0000250000000000000001,
+                AA0000260000000000000001,
+                AA0000270000000000000001,
+                AA0000280000000000000001,
+                AA0000290000000000000001,
+                AA00002A0000000000000001,
+                AA00002B0000000000000001,
+                AA00002C0000000000000001,
+                AA00002D0000000000000001,
+                AA00002E0000000000000001,
+                AA00002F0000000000000001,
+                AA0000300000000000000001,
+                AA0000200000000000000001,
+                AA0000210000000000000001,
+            );
+            path = "Ingredii";
+            sourceTree = "<group>";
+        };
+        AA0000410000000000000001 /* PBXGroup */ = {
+            isa = PBXGroup;
+            children = (
+                AA0000400000000000000001,
+            );
+            sourceTree = "<group>";
+        };
+        AA0000420000000000000001 /* PBXGroup */ = {
+            isa = PBXGroup;
+            children = (
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+
+        AA0000500000000000000001 /* PBXProject */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1320;
+                LastUpgradeCheck = 1320;
+                ORGANIZATIONNAME = "Example";
+            };
+            buildConfigurationList = AA0000600000000000000001 /* Build configuration list */;
+            compatibilityVersion = "Xcode 13.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+            );
+            mainGroup = AA0000410000000000000001;
+            productRefGroup = AA0000420000000000000001;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                AA0000700000000000000001,
+            );
+        };
+
+        AA0000550000000000000001 /* PBXSourcesBuildPhase */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                AA0000010000000000000001,
+                AA0000020000000000000001,
+                AA0000030000000000000001,
+                AA0000040000000000000001,
+                AA0000050000000000000001,
+                AA0000060000000000000001,
+                AA0000070000000000000001,
+                AA0000080000000000000001,
+                AA0000090000000000000001,
+                AA00000A0000000000000001,
+                AA00000B0000000000000001,
+                AA00000C0000000000000001,
+                AA00000D0000000000000001,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+
+        AA0000560000000000000001 /* PBXResourcesBuildPhase */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                AA00000E0000000000000001,
+                AA00000F0000000000000001,
+                AA0000110000000000000001,
+                AA0000120000000000000001,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+
+        AA0000570000000000000001 /* PBXFrameworksBuildPhase */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+
+        AA0000700000000000000001 /* Ingredii */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = AA0000800000000000000001 /* Build configuration list for PBXNativeTarget "Ingredii" */;
+            buildPhases = (
+                AA0000550000000000000001,
+                AA0000560000000000000001,
+                AA0000570000000000000001,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = Ingredii;
+            productName = Ingredii;
+            productReference = AA0000430000000000000001 /* Ingredii.app */;
+            productType = "com.apple.product-type.application";
+        };
+
+        AA0000430000000000000001 /* Ingredii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Ingredii.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        AA0000420000000000000001.children = (
+            AA0000430000000000000001,
+        );
+
+        AA0000600000000000000001 /* Build configuration list */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                AA0000610000000000000001 /* Debug */,
+                AA0000620000000000000001 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+
+        AA0000610000000000000001 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                INFOPLIST_FILE = "Ingredii/Info.plist";
+                PRODUCT_BUNDLE_IDENTIFIER = "com.example.Ingredii";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 5.0;
+                IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+            };
+            name = Debug;
+        };
+
+        AA0000620000000000000001 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                INFOPLIST_FILE = "Ingredii/Info.plist";
+                PRODUCT_BUNDLE_IDENTIFIER = "com.example.Ingredii";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 5.0;
+                IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+            };
+            name = Release;
+        };
+
+        AA0000800000000000000001 /* Build configuration list for PBXNativeTarget "Ingredii" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                AA0000810000000000000001 /* Debug */,
+                AA0000820000000000000001 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+
+        AA0000810000000000000001 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+            };
+            name = Debug;
+        };
+
+        AA0000820000000000000001 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+            };
+            name = Release;
+        };
+    };
+    rootObject = AA0000500000000000000001;
+}

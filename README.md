@@ -17,7 +17,17 @@ scan text from a product label.
 
 ## Running
 
-Open `Ingredii/Ingredii.xcodeproj` in Xcode and run the `Ingredii` target.
+This repository does not include a fully configured Xcode project. The
+`Ingredii.xcodeproj` file is only a placeholder, which is why Xcode reports the
+project as being in an unsupported format. To build the app you will need to
+create a new Xcode project and add the existing source files manually:
+
+1. Open Xcode and create a new **iOS App** using the *SwiftUI* template.
+2. Set *Ingredii* as the product name and remove the files Xcode generates in
+   the new project.
+3. Copy the contents of `Ingredii/Ingredii/` (Swift files, assets, storyboard
+   and `Info.plist`) into the new project.
+4. Build and run the app using the `Ingredii` target.
 
 ## Tests
 
@@ -58,7 +68,4 @@ service.recognizeText(in: image) { result in
 
 This service wraps ML Kit's `TextRecognizer` as described in the official
 documentation.
-
-cd ingredii       # or whatever directory you cloned into
-git pull
 
