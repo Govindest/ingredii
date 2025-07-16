@@ -3,8 +3,8 @@
 
 The server can perform two tasks using TensorFlow Lite models:
 
-1. Classify the food item in the uploaded image using the **On-Device Food
-   Classifier** from TensorFlow Hub.
+1. Classify the food item in the uploaded image using the **MobileNetV2 Food
+   Classifier** model.
 2. Optionally run on-device text recognition using the ML Kit Text Recognition
    model. This allows scanning the ingredient list or nutrition label when the
    client requests it.
@@ -39,7 +39,7 @@ BLYNK = blynklib.Blynk(BLYNK_AUTH)
 ###############################
 
 if tf:
-    food_interpreter = tf.lite.Interpreter(model_path='food_classifier.tflite')
+    food_interpreter = tf.lite.Interpreter(model_path='mobilenet_v2_food_classifier.tflite')
     food_interpreter.allocate_tensors()
     food_input = food_interpreter.get_input_details()
     food_output = food_interpreter.get_output_details()

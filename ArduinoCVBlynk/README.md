@@ -26,23 +26,25 @@ server. The response from the server is written to Blynk virtual pin **V0**.
    ```bash
    pip install -r requirements.txt
    ```
-2. Download the **On-Device Food Classifier** TFLite model from TensorFlow Hub
-   and save it as `food_classifier.tflite` in this directory. Optionally place
-   the accompanying `labels.txt` file alongside the model so results include the
-   label name.
-3. (Optional) Download the ML Kit Text Recognition v2 (on-device) model and
-   save it as `text_recognizer.tflite` if you want to enable OCR for scanning
-   ingredient lists.
+2. Download the **MobileNetV2 Food Classifier** TFLite model from
+   [Pramit726/MobileNetV2-FoodClassifier](https://github.com/Pramit726/MobileNetV2-FoodClassifier)
+   and save it as `mobilenet_v2_food_classifier.tflite` in this directory.
+   Optionally place the accompanying `labels.txt` file alongside the model so
+   results include the label name.
+3. (Optional) Download the ML Kit Text Recognition v2 (on-device) model from
+   [Google ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2)
+   and save it as `text_recognizer.tflite` if you want to enable OCR for
+   scanning ingredient lists.
 4. Run the server:
    ```bash
    python server.py
    ```
-   The server listens on port **5000** for image uploads.
+The server listens on port **5000** for image uploads.
 
 When an image is received the server performs one of two actions depending on
 the query parameter:
 
-- **Default**: classify the food item using the On-Device Food Classifier and
+- **Default**: classify the food item using the MobileNetV2 Food Classifier and
   forward the result to both the ESP32-CAM and Blynk.
 - **`mode=ocr`**: run the text recognizer on the uploaded image and return the
   detected UTF‑8 text. This can be used after cropping the label region on the

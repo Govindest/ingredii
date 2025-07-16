@@ -29,9 +29,10 @@ The `ArduinoCVBlynk` directory contains a companion project demonstrating how
 to capture images from an ESP32‑CAM and classify them on-device. It uses two
 TensorFlow Lite models:
 
-1. **On-Device Food Classifier** – recognizes dozens of common dishes and
-   snacks.
-2. **ML Kit Text Recognition v2** – reads printed text from the image when
-   invoked in `mode=ocr`.
+1. **MobileNetV2 Food Classifier** – download from
+   [Pramit726/MobileNetV2-FoodClassifier](https://github.com/Pramit726/MobileNetV2-FoodClassifier).
+2. **ML Kit Text Recognition v2** – from
+   [Google ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2),
+   invoked when the server is run with `mode=ocr`.
 
 See `ArduinoCVBlynk/README.md` for setup instructions.
