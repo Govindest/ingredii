@@ -1,5 +1,5 @@
 def train():
-    print('Training model')
+    print('Training image model')
 
 if __name__ == '__main__':
     train()
