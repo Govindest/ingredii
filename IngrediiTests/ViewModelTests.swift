@@ -7,4 +7,11 @@ final class ViewModelTests: XCTestCase {
         viewModel.loadSampleData()
         XCTAssertFalse(viewModel.items.isEmpty)
     }
+
+    func testAddItem() {
+        let viewModel = PantryViewModel()
+        let initialCount = viewModel.items.count
+        viewModel.addItem(name: "Test", quantity: 1, expiry: nil)
+        XCTAssertEqual(viewModel.items.count, initialCount + 1)
+    }
 }

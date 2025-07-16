@@ -1,1 +1,19 @@
-1
+# Ingredii
+
+Simple pantry inventory management example built with SwiftUI.
+
+## Features
+
+- Display a list of pantry items
+- View item details
+- Add and delete items
+- Data is persisted using `UserDefaults`
+- Sample inventory is loaded on first launch
+
+## Running
+
+Open `Ingredii/Ingredii.xcodeproj` in Xcode and run the `Ingredii` target.
+
+## Tests
+
+Unit tests reside in the `IngrediiTests` group. Run them from Xcode via the `Product` → `Test` menu.
