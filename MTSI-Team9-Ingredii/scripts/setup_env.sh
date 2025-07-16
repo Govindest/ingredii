@@ -1,0 +1,5 @@
+#!/bin/bash
+# Simple environment setup script
+python3 -m venv venv
+source venv/bin/activate
+pip install -r ../software/backend/requirements.txt
