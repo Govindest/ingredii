@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 class PantryViewModel: ObservableObject {
     @Published var items: [PantryItem] = []
