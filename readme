@@ -7,8 +7,9 @@ Simple pantry inventory management example built with SwiftUI.
 - Display a list of pantry items
 - View item details
 - Add and delete items
+- Add items with optional expiry dates
 - Data is persisted using `UserDefaults`
-- Sample inventory is loaded on first launch
+- Sample inventory is loaded on first launch using bundled JSON
 
 ## Running
 

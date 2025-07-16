@@ -13,5 +13,8 @@ final class ViewModelTests: XCTestCase {
         let initialCount = viewModel.items.count
         viewModel.addItem(name: "Test", quantity: 1, expiry: nil)
         XCTAssertEqual(viewModel.items.count, initialCount + 1)
+        viewModel.removeItems(at: IndexSet(integer: viewModel.items.count - 1))
+        XCTAssertEqual(viewModel.items.count, initialCount)
     }
 }
+

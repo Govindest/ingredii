@@ -4,6 +4,7 @@ struct AddItemView: View {
     @Environment(\.presentationMode) private var presentationMode
     @State private var name = ""
     @State private var quantity = 1
+    @State private var hasExpiry = false
     @State private var expiry = Date()
 
     var onSave: (PantryItem) -> Void
@@ -15,7 +16,10 @@ struct AddItemView: View {
                 Stepper(value: $quantity, in: 1...100) {
                     Text("Quantity: \(quantity)")
                 }
-                DatePicker("Expiry", selection: $expiry, displayedComponents: .date)
+                Toggle("Has Expiry", isOn: $hasExpiry)
+                if hasExpiry {
+                    DatePicker("Expiry", selection: $expiry, displayedComponents: .date)
+                }
             }
             .navigationTitle("Add Item")
             .toolbar {
@@ -24,7 +28,7 @@ struct AddItemView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") {
-                        let item = PantryItem(name: name, quantity: quantity, expiry: expiry)
+                        let item = PantryItem(name: name, quantity: quantity, expiry: hasExpiry ? expiry : nil)
                         onSave(item)
                         presentationMode.wrappedValue.dismiss()
                     }
