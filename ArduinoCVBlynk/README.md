@@ -50,6 +50,24 @@ the query parameter:
   detected UTF‑8 text. This can be used after cropping the label region on the
   device.
 
+## Command Line Usage
+
+You can also run the models directly on an image without using the ESP32‑CAM.
+After placing the `mobilenet_v2_food_classifier.tflite` and optional
+`text_recognizer.tflite` models in this directory run:
+
+```bash
+python scan_image.py path/to/image.jpg
+```
+
+Pass `--mode ocr` to extract text from the image instead of classifying it:
+
+```bash
+python scan_image.py --mode ocr path/to/image.jpg
+```
+
+The script prints a small JSON object describing the result.
+
 ## Blynk Configuration
 1. Create a new Blynk project and note the **auth token**.
 2. Add a **Value Display** widget to virtual pin **V0** to see classification
