@@ -9,6 +9,8 @@ struct ItemDetailView: View {
             Text("Quantity: \(item.quantity)")
             if let expiry = item.expiry {
                 Text("Expires on: \(expiry.formatted(date: .abbreviated, time: .omitted))")
+            } else {
+                Text("No expiry date")
             }
             Spacer()
         }
