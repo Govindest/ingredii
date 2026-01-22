@@ -1,12 +1,68 @@
 # Ingredii
 
+Ingredii now ships as a lightweight **Next.js web app** designed for Vercel plus
+an optional **Docker render worker** that runs Manim in a stable runtime. The
+original SwiftUI pantry app and computer vision demo remain available in this
+repo for reference.
+
+## Architecture (Vercel-friendly)
+
+1. **Web app (Next.js on Vercel)**
+   - UI: prompt box, generate button, feed viewer
+   - API route: calls GPT to produce Manim code, sends it to a render worker, and
+     returns a video URL
+2. **Render worker (Docker service)**
+   - Receives Manim code
+   - Runs Manim in a container
+   - Uploads MP4 to storage
+   - Returns a public URL
+
+This keeps Vercel focused on the web + lightweight API while Manim runs inside a
+Dockerized worker.
+
+## Web App (Next.js)
+
+Location: `web/`
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+Set environment variables in `web/.env.local` when deploying:
+
+```bash
+OPENAI_API_KEY=your-key
+OPENAI_MODEL=gpt-4o-mini
+RENDER_WORKER_URL=http://localhost:8000
+```
+
+The `/api/generate` route is responsible for:
+
+1. Generating Manim code via OpenAI.
+2. Sending that code to the render worker.
+3. Returning `{ videoUrl, manimCode }` to the UI.
+
+## Render Worker (Docker)
+
+Location: `render-worker/`
+
+```bash
+docker build -t ingredii-render-worker ./render-worker
+
+docker run -p 8000:8000 ingredii-render-worker
+```
+
+The worker currently ships with a stub implementation. Replace the stub in
+`render-worker/app/main.py` with a real Manim render pipeline (write to file,
+invoke Manim, upload to storage, return URL).
+
+## iOS App (Legacy)
+
 Simple pantry inventory management example built with SwiftUI.
 
-This repository also contains an optional computer vision example that uses an
-ESP32-CAM and TensorFlow Lite models to automatically identify pantry items or
-scan text from a product label.
-
-## Features
+### Features
 
 - Display a list of pantry items
 - View item details
@@ -15,7 +71,7 @@ scan text from a product label.
 - Data is persisted using `UserDefaults`
 - Sample inventory is loaded on first launch using bundled JSON
 
-## Running
+### Running
 
 This repository does not include a fully configured Xcode project. The
 `Ingredii.xcodeproj` file is only a placeholder, which is why Xcode reports the
@@ -29,9 +85,10 @@ create a new Xcode project and add the existing source files manually:
    and `Info.plist`) into the new project.
 4. Build and run the app using the `Ingredii` target.
 
-## Tests
+### Tests
 
-Unit tests reside in the `IngrediiTests` group. Run them from Xcode via the `Product` → `Test` menu.
+Unit tests reside in the `IngrediiTests` group. Run them from Xcode via the
+`Product` → `Test` menu.
 
 ## Computer Vision Example
 
@@ -68,4 +125,3 @@ service.recognizeText(in: image) { result in
 
 This service wraps ML Kit's `TextRecognizer` as described in the official
 documentation.
-
